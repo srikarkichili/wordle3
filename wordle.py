@@ -122,7 +122,6 @@ def prepare_game():
     # Specify "ascii" as its representation (encoding) since its required by pylint.
     with open("valid_guesses.txt", "r", encoding="ascii") as valid_nonsecret_words:
         valid_words = [word.rstrip() for word in valid_nonsecret_words.readlines()]
-    
     with open("secret_words.txt", "r", encoding="ascii") as valid_secret:
         sec_words = [word.rstrip() for word in valid_secret.readlines()]
 
@@ -184,7 +183,6 @@ def get_feedback(secret_word, guessed_word):
           in the returned value.
     """
     # Modify this! This is just starter code.
-    
     feedback = [NOT_IN_WORD_COLOR + i + RESET_COLOR for i in guessed_word]
     count = {}
     for i in secret_word:
