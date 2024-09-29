@@ -101,7 +101,6 @@ def color_word(colors, word):
 
     return "".join(colored_word)
 
-# TODO: Modify this function. You may delete this comment when you are done.
 def prepare_game():
     """
     Prepares the game by reading in the valid words and secret words and
@@ -145,7 +144,6 @@ def prepare_game():
     # You do not have to change this return statement
     return secret_word, valid_words
 
-# TODO: Modify this function. You may delete this comment when you are done.
 def is_valid_guess(guess, valid_guesses):
     """
     Checks if a given guess is valid.
@@ -164,7 +162,6 @@ def is_valid_guess(guess, valid_guesses):
     else:
         return False
 
-# TODO: Modify this function. You may delete this comment when you are done.
 def get_feedback(secret_word, guessed_word):
     """
     Processes the guess and generates the colored feedback based on the secret
