@@ -195,7 +195,6 @@ def get_feedback(secret_word, guessed_word):
         if guessed_word[i] == secret_word[i]:
             feedback[i] = CORRECT_COLOR + guessed_word[i] + RESET_COLOR
             count[guessed_word[i]] -= 1
-        
     for i in range(NUM_LETTERS):
         if feedback[i] == (NOT_IN_WORD_COLOR + guessed_word[i] + RESET_COLOR):
             if guessed_word[i] in count:
@@ -203,7 +202,6 @@ def get_feedback(secret_word, guessed_word):
                     feedback[i] = WRONG_SPOT_COLOR + guessed_word[i] + RESET_COLOR
                     count[guessed_word[i]] -= 1
     return "".join(feedback)
-    
     # You do not have to change this return statement
     return color_word(feedback, guessed_word)
 
